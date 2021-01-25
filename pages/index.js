@@ -4,6 +4,7 @@ import Widget from '../src/components/Widget'
 import Footer from '../src/components/Footer'
 import GithubCorner from '../src/components/GithubCorner'
 import QuizBackground from '../src/components/QuizBackground'
+import IndexPage from '../src/components/IndexPage'
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -19,31 +20,34 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   return (
-    <QuizBackground backgroundImage={db.bg}>
-      <QuizContainer>
-        <Widget>
-        <Widget.Header>
+    <>
+    <IndexPage></IndexPage>
+      <QuizBackground backgroundImage={db.bg}>
+        <QuizContainer>
+          <Widget>
+            <Widget.Header>
               <h1>{db.title}</h1>
             </Widget.Header>
-          <Widget.Content>
-            <p>
-              {db.description}
-            </p>
-          </Widget.Content>
-        </Widget>
+            <Widget.Content>
+              <p>
+                {db.description}
+              </p>
+            </Widget.Content>
+          </Widget>
 
-        <Widget>
-          <Widget.Content>
-            <h1>Quiz da galera</h1>
+          <Widget>
+            <Widget.Content>
+              <h1>Quiz da galera</h1>
 
-            <p>
-              Salve salve
+              <p>
+                Salve salve
           </p>
-          </Widget.Content>
-        </Widget>
-        <Footer />
-      </QuizContainer>
-      <GithubCorner projectUrl="https://github.com/pedro-candido"/>
-    </QuizBackground>
+            </Widget.Content>
+          </Widget>
+          <Footer />
+        </QuizContainer>
+        <GithubCorner projectUrl="https://github.com/pedro-candido" />
+      </QuizBackground>
+    </>
   )
 }
