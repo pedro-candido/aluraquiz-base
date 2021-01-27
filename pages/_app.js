@@ -1,5 +1,7 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import db from '../db.json'
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/prop-types */
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import db from '../db.json';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -17,9 +19,9 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
   }
 
-`
+`;
 
-const theme = db.theme
+const { theme } = db;
 
 export default function App({ Component, pageProps }) {
   return (
@@ -29,5 +31,5 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }

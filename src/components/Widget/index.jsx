@@ -1,10 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Widget = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
-  background-color: ${({theme}) => theme.colors.secondary};
+  background-color: ${({ theme }) => theme.colors.secondary};
   opacity: 0.85;
   border-radius: 2px;
   overflow: hidden;
@@ -24,21 +24,21 @@ const Widget = styled.div`
     font-weight: 400;
     line-height: 1;
   }
-`
+`;
 
 Widget.Header = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 18px 32px;
-  color: ${({theme})=> theme.colors.contrastText};
+  color: ${({ theme }) => theme.colors.contrastText};
   background-color: ${({ theme }) => theme.colors.primary};
   opacity: 1.0;
 
   h1{
     margin-block-start: 0;
   }
-`
+`;
 
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
@@ -59,4 +59,4 @@ Widget.Content = styled.div`
   }
 `;
 
-export default Widget
+export default Widget;
