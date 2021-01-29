@@ -43,6 +43,7 @@ Widget.Header = styled.header`
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
   opacity: 1.0;
+  color: ${({ theme }) => theme.colors.contrastText};
 
 
   & > *::first-child{
