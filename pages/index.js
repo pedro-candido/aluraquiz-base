@@ -50,7 +50,7 @@ export default function Home() {
 
   return (
     <>
-      <IndexPage />
+      <IndexPage>FF9 Quiz</IndexPage>
       <QuizBackground backgroundImage={db.bg}>
         <QuizContainer>
           <Widget>
